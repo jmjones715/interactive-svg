@@ -1,0 +1,36 @@
+#left-ear{
+  transition: all .5s linear;
+}
+
+#right-ear{
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear {
+  transform: translate(0, -.5em);
+}
+
+#bear:hover #right-ear {
+  transform: translate(0, -.5em);
+}
+
+#left-eye {
+  animation: pupils 3s linear foward;
+}
+
+#right-eye {
+  animation: pupils 3s linear foward;
+}
+
+@keyframes pupils {
+
+  0% {
+    transform: translateX(-500px);
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
