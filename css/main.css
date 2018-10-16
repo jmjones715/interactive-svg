@@ -1,32 +1,39 @@
-#left-ear{
+#left-ear {
   transition: all .5s linear;
 }
 
-#right-ear{
+#right-ear {
   transition: all .5s linear;
 }
 
 #bear:hover #left-ear {
-  transform: translate(0, -.5em);
+  transform: translate(0, -.4em);
 }
 
 #bear:hover #right-ear {
-  transform: translate(0, -.5em);
+  transform: translate(0, -.4em);
 }
 
 #left-eye {
-  animation: pupils 3s linear foward;
+  animation: pupils 3s infinite;
 }
 
 #right-eye {
-  animation: pupils 3s linear foward;
+  animation: pupils 3s infinite;
 }
 
 @keyframes pupils {
 
   0% {
-    transform: translateX(-500px);
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(-.5em);
+  }
+
+  80% {
+    transform: translateX(.5em);
   }
 
   100% {
